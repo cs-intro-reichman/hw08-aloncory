@@ -76,7 +76,7 @@ class PlayList {
      *  If such a track is not found, returns -1. */
     public int indexOf(String title) {
         // Uppercases the first letter of the title and lowercases all the other letters in the title
-        title = title.substring(0, 1).toUpperCase() + title.substring(1).toLowerCase(); .
+        title = title.substring(0, 1).toUpperCase() + title.substring(1).toLowerCase(); 
         for (int i = 0; i < this.size; i++) {
             if (this.getTrack(i).getTitle().equals(title)) {
                 return i;
